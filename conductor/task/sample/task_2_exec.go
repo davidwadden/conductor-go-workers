@@ -15,7 +15,7 @@ package sample
 
 import (
 	"log"
-	"conductor/task"
+	"github.com/davidwadden/conductor-go-workers/conductor/task"
 )
 
 // Implementation for "task_2"

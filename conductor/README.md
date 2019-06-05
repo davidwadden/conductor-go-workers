@@ -105,7 +105,7 @@ package main
 
 import (
     "conductor"
-    "conductor/task/sample"
+    "github.com/davidwadden/conductor-go-workers/conductor/task/sample"
 )
 
 func main() {

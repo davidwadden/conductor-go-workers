@@ -14,7 +14,7 @@
 package conductor
 
 import (
-	"conductor/task"
+	"github.com/davidwadden/conductor-go-workers/conductor/task"
 	"log"
 	"os"
 	"time"

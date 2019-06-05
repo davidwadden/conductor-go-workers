@@ -14,7 +14,7 @@
 package conductor
 
 import (
-    "conductor/httpclient"
+    "github.com/davidwadden/conductor-go-workers/conductor/httpclient"
     "strconv"
     "log"
     "fmt"

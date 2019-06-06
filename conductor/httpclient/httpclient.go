@@ -18,6 +18,7 @@ import (
     "net/http"
     "io/ioutil"
     "bytes"
+    "net/url"
     "strings"
     "fmt"
 )
@@ -54,14 +55,12 @@ func genParamString(paramMap map[string]string) string {
         return ""
     }
 
-    output := "?"
+    params := url.Values{}
     for key, value := range paramMap {
-        output += key
-        output += "="
-        output += value
-        output += "&"
+        params.Add(key, value)
     }
-    return output
+
+    return "?" + params.Encode()
 }
 
 func (c *HttpClient) httpRequest(url string, requestType string, headers map[string]string, body string) (string, error) {
